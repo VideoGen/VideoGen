@@ -55,6 +55,9 @@
     margin-left: 5%;
     }
 
+    .results-carousel .item {display: flex;
+    justify-content: center;}
+
     .video_item{
       height: auto;
     max-width: 100%;
@@ -79,7 +82,7 @@
                 <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Li Xin</a><sup>*</sup>,</span> -->
                   <span class="author-block">
-                    <target="_blank">Anonymous</a>
+                    <target="_blank"> Xin Li, Wenqing Chu, Ye Wu , Weihang Yuan, Fanglong Liu, Qi Zhang , Fu Li, Haocheng Feng , Errui Ding , Jingdong Wang</a>
                   </span>
                   </div>
 
@@ -92,7 +95,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/abs/2309.00398" target="_blank"
+                        <a href="https://arxiv.org/pdf/2309.00398.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -100,28 +103,6 @@
                         <span>Paper</span>
                       </a>
                     </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/VideoGen/Text-to-Video-VideoGen" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
@@ -149,21 +130,21 @@
       <!-- <h2 class="title is-3">Video Presentations</h2> -->
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="240">
+          <video poster="" id="video1" autoplay controls muted loop width=80%>
             <!-- Your video file here -->
             <source src="static/videos/banner.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="240">
+          <video poster="" id="video2" autoplay controls muted loop width=80%>
             <!-- Your video file here -->
             <source src="static/videos/banner2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="240">\
+          <video poster="" id="video3" autoplay controls muted loop width=80%>\
             <!-- Your video file here -->
             <source src="static/videos/banner3.mp4"
             type="video/mp4">
@@ -180,7 +161,7 @@
 
 <script>
 
-for (let i=1;i<=32;i++)
+for (let i=1;i<=30;i++)
 { 
   let video = document.createElement('video');
 
