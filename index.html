@@ -47,6 +47,18 @@
   <style>
     .video_box{
       display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    justify-content: space-around;
+    /* max-width: 1500px; */
+    width: 90%;
+    margin-left: 5%;
+    }
+
+    .video_item{
+      height: auto;
+    max-width: 100%;
+    margin: 25px 15px;
     }
 
   </style>
@@ -162,12 +174,51 @@
   </div>
 </section>
 <!-- End video carousel -->
+<div class="video_box" id="video_box">
 
-<video width="320" height="240" controls class="video_box">
-  <source src="static/videos/1.mp4" type="video/mp4">
-  <source src="static/videos/2.mp4" type="video/mp4">
-  <source src="static/videos/3.mp4" type="video/mp4">
-</video>
+</div>
+
+<script>
+
+for (let i=1;i<=32;i++)
+{ 
+  let video = document.createElement('video');
+
+video.src =`static/videos/${i}.mp4`;
+// video.class='video_item'
+video.classList.add('video_item');
+
+video.autoplay = true;
+video.controls = true;
+video.muted = false;
+video.height = 240; 
+video.width = 320; 
+
+let box = document.getElementById('video_box');
+
+box.appendChild(video);
+}
+
+
+
+
+</script>
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{li2023videogen,
+      title={VideoGen: A Reference-Guided Latent Diffusion Approach for High Definition Text-to-Video Generation}, 
+      author={Xin Li and Wenqing Chu and Ye Wu and Weihang Yuan and Fanglong Liu and Qi Zhang and Fu Li and Haocheng Feng and Errui Ding and Jingdong Wang},
+      year={2023},
+      eprint={2309.00398},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}</code></pre>
+  </div>
+</section>
+<!--End BibTex citation -->
 
   </body>
   </html>
